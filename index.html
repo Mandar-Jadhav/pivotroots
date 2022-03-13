@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> 
+   <link rel="stylesheet" href="style/style.css"> 
+    <script src="scripts/pivot.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <title>Pivot Roots</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-9 col-md-5 col-lg-4">
+                <h4 class="container-fluid pivot-title">Guaranteed Higher Scores! Only with easyMath</h4>
+            </div>
+        </div>
+        <div class="container-fluid pivot-main">
+            <div class="pivot-overlay col-lg-10 col-md-12 col-sm-12">
+               
+                <ul class="nav nav-pills pivot-tabs"  id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true" onclick="monthHide()">Yearly Courses</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false" onclick="yearHide()">Monthly Courses</button>
+                    </li>
+                  </ul>
+                  <div class="tab-content" id="pills-tabContent">
+                    <div class="container-fluid tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                        <div class="row">
+                            <div class="col-sm-6 col-md-5 col-lg-2 yearlyList">
+                                <select  class="form-select form-select-lg mb-3" id="list" aria-label=".form-select-lg example">
+                                    <option > select grade</option>
+                                  </select>
+                                </div>
+                            <div class="col-sm-12 col-md-9 col-lg-9 ">
+                                  <div id="boardsCol"></div>
+                            </div>
+                                  <div class="row" id="boardData"></div>
+                        </div>
+                        <div class="row" id="Course" >
+                            <h5> Course Topics Include</h5>                            
+                            <div class="col-md-4 col-lg-4 col-sm-12">
+                              <span class="Course_Intro">Introduction</span>
+                              <p class="Course_para">Irrational Numbers <br> Real Numbers and their Decimal <br> Expansions <br> Representing Real Numbers on the <br> Number Line </p>
+                            </div>
+                            <div class="col-md-4 col-lg-4 col-sm-12">
+                              <span class="Course_Intro">Polynomials</span>
+                              <p class="Course_para">Polynomials in One Variable <br> Zeroes of a Polynomial <br> Remainder Theorem <br>Factorisation of Polynomials <br>Algebraic Identities</p>
+                            </div>
+                            <div class="col-md-4 col-lg-4 col-sm-12">
+                              <span class="Course_Intro">Polynomials</span>
+                              <p class="Course_para">Polynomials in One Variable <br> Zeroes of a Polynomial <br> Remainder Theorem <br>Factorisation of Polynomials <br>Algebraic Identities</p>
+                            </div>
+                        </div>
+
+                        
+
+                    </div>
+                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                        <div class="row">
+                            <div class="col-sm-6 col-md-5 col-lg-2 yearlyList">
+                                <select  class="form-select form-select-lg mb-3" id="list2" aria-label=".form-select-lg example">
+                                    <option selected >Select Grade <i class="fa-solid fa-arrow-down"></i></option>
+                                  </select>
+                                </div>
+                                  <div class="row"  id="monthData"></div>
+                        </div>
+                    </div>
+                  </div>
+            
+            </div>
+            <div class="footer">
+                <div class="row" id="FooterYearly1">
+                    <div class="col-md-4 col-lg-4 col-sm-12">
+                        <span id="foot1">Filling out soon</span>
+                         <h3>Vacant Seats <span style="color: #EDBF41;font-weight:800">100 seats</span></h3>
+                         <p style="font-size: 13px;">Not a classroom, but 1:1 sessions</p>
+                    </div>
+                    <div class="col-md-5 col-lg-5 col-sm-12">
+                        <span id="foot2">50% OFF</span>
+                         <h4>Subscription cost: <span style="color: #EDBF41;font-weight: 300;">Rs3999 <span style="text-decoration: line-through;">Rs.5999</span></span></h4>
+                         <p style="font-size: 13px;"> This cost is Inclusive of the tablet cost.<br> Per session cost is Rs 129</p>
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-sm-12">
+                        <p id="foot3"> Book Now </p>
+                    </div>
+                </div>
+                <div class="row" id="FooterYearly2">
+                    <div class="col-md-8 col lg-8 col-sm-12">
+                        <h6>You can also avail a 8 inch and 10 inch tablet with your Subscription</h6>
+                    </div>
+                    <div class="col-md-4 col lg-4 col-sm-12 align-self-end">
+                        <p>Guatanteed terms & conditions apply*</p>
+                    </div>
+                </div>
+                <div class="row" id="FooterYearly3">
+                    <div class="col-md-6 col-lg-6 col-sm-12">
+                         <h3>Monthly classes let you choose <br> your own course topics </h3>
+                    </div>
+                    <div class="col-md-4 col-lg-4 col-sm-12">
+                         <h4>Each session lasts <br> 45 minutes</h4>
+                    </div>
+                    <div class="col-md-2 col-lg-2 col-sm-12">
+                        <p id="foot3"> Book Now </p>
+                    </div>
+                </div>
+                <div class="row" id="FooterYearly4">
+                    <div class="col-md-8 col-lg-8 col-sm-12 justify-content-end">
+                    </div>
+                    <div class="col-md-4 col-lg-4 col-sm-12 justify-content-end">
+                        <p>Guatanteed terms & conditions apply*</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+ 
+</body>
+</html>

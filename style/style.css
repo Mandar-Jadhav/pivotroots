@@ -1,0 +1,227 @@
+.pivot-title{
+    font-family: Arial;
+    font-size: 14px;
+    padding: 5px 5px;
+    margin: 0;
+    margin-left: 30%;
+    border-radius: 15px 15px 0px 0px;
+    background-color: #F3AC11;
+    text-align: center;
+    color: grey;
+}
+
+.pivot-main{
+    position: relative;
+    height: 110vh;
+    width: 90vw;
+    border-radius: 25px;
+    background-color: #0B2F90;
+}
+
+.pivot-overlay{
+    position: absolute;
+    height: 75vh;
+    width: 90vw;
+    left: 0;   
+    border-radius: 25px;
+    background-color: #7A70D2;
+}
+
+.btn{
+    background-color: #7A70D2;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-weight: 500;
+}
+
+.pivot-tabs{
+    margin-left: 100px;
+}
+
+.nav-pills .nav-link{
+    margin-top: 30px;
+    border: none;
+    border-radius: 20px;
+    /* width: 185px; */
+    color: #B5ACF1;
+    font-weight: 700;
+    margin-right: 10px;
+}
+.nav-pills .nav-link.active{
+   
+    background-color: #0B2E90;
+}
+
+#list,#list2{
+    font-family: Arial;
+    font-size: 17px;
+    font-weight: 400;
+    background: transparent;
+    color: white;
+    border: none;
+    border-bottom: 2px solid white;
+}
+#list > option, #list2 > option{
+    background-color: #7A70D2;
+    color: white;
+    border: none;
+    
+}
+.yearlyList {
+    margin-top: 1%;
+    margin-left: 7%;
+    /* width: 17%; */
+}
+
+#boardsCol,#boardData{
+    display: flex;
+   text-align: center;
+   justify-content: center;
+}
+#boardData{
+margin-top: 20px;
+}
+.boardColumn.active{
+    background-color: #0B2E90;
+}
+.boardColumn{
+    width: 150px;
+    margin-top: 20px;
+    margin-left: 20px;
+    color: white;
+    font-family: Arial;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 5px;
+    border-radius: 25px;
+}
+
+.boardInfo{
+    text-align: start;
+    color: white;
+    width: 172px;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: 700
+}
+.boardInfo > span {
+    color: #EDBF41;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+#Course{
+    padding: 0px 85px;
+}
+#Course > h5{
+    margin-top: 5px; color: white;
+}
+
+.Course_para{
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+}
+.Course_Intro{
+    color: #EDBF41;
+    font-weight: 700;
+}
+
+#FooterYearly1{
+    display:flex;bottom: 40px;color: white;position: absolute;width: 100%;padding: 0px 85px;
+}
+
+#foot1{
+color: #0B2F90;background-color: white;padding: 1px 9px;border-radius: 9px;margin-top: -29px;float: right;
+}
+
+#foot2{
+    color: #0B2F90;background-color: white;padding: 1px 9px;border-radius: 9px;margin: 0 auto;left: 0;right: 0;top: -31px;width: 100px;position: absolute;
+}
+
+#foot3{
+    background-color: #EDBF41; color: #0B2F90;padding: 9px 0px;text-align: center;border-radius: 30px;width: 140px;float: right;
+}
+
+#FooterYearly2{
+    display:flex;bottom: 0px;color: white;position: absolute;width: 100%;padding: 0px 85px;
+}
+
+#FooterYearly3{
+    display:none;bottom: 40px;color: white;position: absolute;width: 100%;padding: 0px 85px;
+
+}
+
+#FooterYearly4{
+    display:none;bottom: 0px;color: white;position: absolute;width: 100%;padding: 0px 85px;
+
+}
+.monthdatastyle{
+    color: white;
+    
+}
+
+#monthData{
+    position: absolute;
+    left: 0px;
+    right: 0;
+    margin: 0 auto;
+    top: 154px;
+    display: flex;
+    justify-content: flex-end
+}
+
+.footer{
+    bottom: 0;
+}
+
+
+@media screen and (min-device-width: 600px) and (max-device-width: 990px) { 
+    .pivot-title{
+        margin-left: 15%;
+    }
+    .pivot-overlay{
+        height: 90vh;
+    }
+    .pivot-main{
+        height: 130vh;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .pivot-title{
+        width: 80%;
+        margin: 0 auto;
+        left: 0;
+        right: 0
+    }
+    .boardColumn {
+        margin-left : 0;
+        font-size : 13px;
+    }
+    .yearlyList {
+        margin-left: 0%;
+    }
+    .pivot-overlay{
+        height: 205vh;
+    }
+    #Course{
+        padding: 0px;
+    }
+    .pivot-main{
+        height: 275vh;
+    }
+    #FooterYearly1{
+        padding: 0px;
+        bottom : 131px
+    }
+    #FooterYearly2{
+        padding: 0px;
+        bottom : 25px
+    }
+
+    #foot1{
+        margin-top: 0;
+    }
+}
